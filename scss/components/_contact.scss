@@ -1,19 +1,18 @@
 /*========== Contact Section ==========*/
 .contact{
-    
     &__title {
         text-align: center;
-        font-size: 3rem;
     }
 
     &__info__subtitle {
-        margin: 1em 0;
+        margin: .5em 0;
+        padding: 0;
     }
 
     &__subtitle {
         position: relative;
         text-align: center;
-        margin-bottom: 1.5em;
+        // margin-bottom: 1.5em;
         text-transform: lowercase;
         color: var(--secondray-color);
     }
@@ -44,15 +43,16 @@
         right: 22%;
     }
     &__data {
+        margin-top: 1.5rem;
         text-align: justify;
-        margin-bottom: 1em;
+        // margin-bottom: 1em;
     }
 
     &__lists {
         display: flex;
         align-items: center;
         gap: var(--gap);
-        margin-top: 1rem;
+        margin-top: .4rem;
     }
 
     .form_box{
@@ -62,7 +62,7 @@
     }
     .inputbox{
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     .inputbox input,
     .inputbox textarea{

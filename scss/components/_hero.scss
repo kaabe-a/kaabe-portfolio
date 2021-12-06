@@ -1,14 +1,14 @@
 /*========== Hero ==========*/
 
 .hero{
-    margin-top: 10em;
+
     &__title{
         font-size: var(--h1-font-size);
         line-height: var(--title-line-height);
     }
     &__data{
         line-height: var(--text-line-height);
-        margin: var(--m_tb);
+        // margin: var(--m_tb);
         text-align: justify;
     }
     &__info{

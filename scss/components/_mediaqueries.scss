@@ -7,6 +7,14 @@
         align-items: flex-start;
         justify-content: space-between;
     }
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}    
 /*========== Header Section ==========*/
     header{
         text-align: start;
@@ -92,12 +100,21 @@
 
 /*========== About Section ==========*/
     .about{
-        &__info__subtitle{
-            margin-bottom: 1em;
+        .row{
+            gap: 6em;
         }
-        &__data{
-            margin-bottom: var(--mr__bottom);
+        &__info{
+            width: 60%;
         }
+        &__img{
+            width: 40%;
+        }
+        // &__info__subtitle{
+        //     // margin-bottom: 1em;
+        // }
+        // &__data{
+        //     // margin-bottom: var(--mr__bottom);
+        // }
         .about__subtitle span::before {
             left: 25%;
         }
@@ -124,11 +141,11 @@
 /*==========|  Css About |===========*/
     .contact {
         .contact__info {
-            width: 45%;
+            width: 50%;
         }
 
         .contact__form {
-            width: 60%;
+            width: 50%;
         }
 
         .w50 {

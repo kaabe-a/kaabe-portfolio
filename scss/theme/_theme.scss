@@ -1,15 +1,15 @@
 /*========== Theme ==========*/
 
 body.dark-theme{
-    --body-color: hsl(0, 0%, 10%);
+    --body-color: hsl(0, 0%, 5%);
     --primary-color:hsl(0, 0%, 93%);
     --title-color: hsl(0, 0%, 94%);
     --text-color: hsl(0, 0%, 70%);
 
-    --text-color-light:hsl(0, 0%, 25%);
+    --text-color-light:hsl(0, 0%, 35%);
     --secondray-color:hsl(180, 100%, 25%);
     --white-color:hsl(0, 0%, 100%);
-
+    --color-light:hsl(0, 0%, 13%);
     --shadow:hsla(0, 100%, 100%, .6);
 }
 

@@ -1,8 +1,11 @@
 /*========== About CSS classes ==========*/
 .about{
+
     &__title{
         text-align: center;
-        padding-bottom: .1em;
+        margin: 0;
+        padding: 0;
+        // padding-bottom: .1em;
     }
     &__info{
         width: 100%;
@@ -12,7 +15,7 @@
         text-align: start;
     }
     &__img{
-        background-color: var(--text-color-light);
+        // background-color: var(--text-color-light);
         width: 100%;
     }
     &__img img{
