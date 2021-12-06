@@ -113,7 +113,7 @@ section {
   padding: 0.3em 1em;
   background-color: var(--secondray-color);
   letter-spacing: 3px;
-  color: var(--text-color);
+  color: var(--white-color);
   font-variant: small-caps;
   border-radius: 2px;
   font-size: 1.1em;
@@ -296,6 +296,7 @@ header .bars::after {
   text-align: center;
   padding: 1.5em;
   background-color: var(--text-color-light);
+  color: var(--white-color);
 }
 .service__img {
   width: 100%;
@@ -706,7 +707,7 @@ body.dark-theme {
   --text-color: hsl(0, 0%, 70%);
   --text-color-light:hsl(0, 0%, 25%);
   --secondray-color:hsl(180, 100%, 25%);
-  --white-color:hsl(0, 0%, 20%);
+  --white-color:hsl(0, 0%, 100%);
   --shadow:hsla(0, 100%, 100%, .6);
 }
 
