@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>kaabe.org Portfolio</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container navbar">
+            <ul class="nav-toggle">
+                <li><span class="bars"></span></li>
+            </ul>
+            <div class="logo">
+                <h2 class="logo__text">kaabe</h2>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
+                    <li class="nav__item"><a href="#service" class="nav__link">service</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
+                </ul>
+                <ul class="nav__list nav__list--secondray">
+                    <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+                </ul>
+                 
+            </nav>
+        </div>
+    </header>
+    <main>
+        4810236
+        <section class="hero" id="home">
+            <div class="container row">
+                <div class="hero__info">
+                    <h1 class="hero__title"><span style="font-weight: 100;">Hello,</span> <br> I'am kaabe web developer,
+                        <!--freelancer, fullstack web developer-->
+                    </h1>
+                    <p class="hero__data">I create beautiful and responsive world class websites, with accessiblity in
+                        mind!, if you need website let me do it for you.</p>
+                    <button class="hero--btn btn">hire me!</button>
+                </div>
+                <div class="hero__img">
+                    <img src="images/kaabe.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="about__title">About Us</h2>
+                <div class="about__sub">
+                    <p class="about__subtitle"><span>Who Am I</span></p>
+                </div>
+                <div class="row">
+                    <div class="about__img">
+                        <img src="images/kaabe.svg" alt="">
+                    </div>
+                    <div class="about__info">
+                        <h3 class="about__info__subtitle">I'am kaabe web developer</h3>
+                        <p class="about__data">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam
+                            fugiat ex sapiente. Amet, repellat odit natus enim, reprehenderit necessitatibus quod cum
+                            aliquid minima perferendis repudiandae in eligendi dicta explicabo!</p>
+                        <button class="btn about--btn">donload cv</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service" id="service">
+            <div class="container">
+                <h2 class="service__title">My Services</h2>
+                <div class="service__sub">
+                    <p class="service__subtitle"><span>what i provide</span></p>
+                </div>
+                <div class="grid">
+                    <div class="service__card">
+                        <div class="bar"></div>
+                        <div class="service__img"><i class="fa fa-code fa-2x"></i></div>
+                        <h3 class="service__card__subtitle">we development</h3>
+                        <p class="serivece__data">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <button class="btn service--btn">learn more</button>
+                    </div>
+                    <div class="service__card">
+                        <div class="bar"></div>
+                        <div class="service__img"><i class="fa fa-lightbulb fa-2x"></i></div>
+                        <h3 class="service__card__subtitle">web desing</h3>
+                        <p class="serivece__data">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <button class="btn service--btn">learn more</button>
+                    </div>
+                    <div class="service__card">
+                        <div class="bar"></div>
+                        <div class="service__img"><i class="fab fa-wordpress fa-2x"></i></div>
+                        <h3 class="service__card__subtitle">wordpress development</h3>
+                        <p class="serivece__data">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <button class="btn service--btn">learn more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="portfolio__title">Projects i have completed</h2>
+                <div class="portfolio__sub">
+                    <p class="portfolio__subtitle"><span>my projects</span></p>
+                </div>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item active" data-filter="all">All</li>
+                    <li class="portfolio__item" data-filter="fullstack">Fullstack</li>
+                    <li class="portfolio__item" data-filter="frontend">Frontend</li>
+                    <li class="portfolio__item" data-filter="backend">Backend</li>
+                </ul>
+                <div class="portfolio__projects">
+
+                    <div class="portfolio__project" data-item="frontend">
+                        <img class="portfolio__img" src="images/coding.svg" alt="" />
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                    <div class="portfolio__project" data-item="frontend">
+                        <img class="portfolio__img" src="images/program.svg" alt="" />
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                    <div class="portfolio__project" data-item="fullstack">
+                        <img class="portfolio__img" src="images/coding.svg" alt="">
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                    <div class="portfolio__project" data-item="fullstack">
+                        <img class="portfolio__img" src="images/remote.svg" alt="">
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                    <div class="portfolio__project" data-item="backend">
+                        <img class="portfolio__img" src="images/coding.svg" alt="">
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                    <div class="portfolio__project" data-item="backend">
+                        <img class="portfolio__img" src="images/program.svg" alt="">
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                    <div class="portfolio__project" data-item="frontend">
+                        <img class="portfolio__img" src="images/remote.svg" alt="">
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                    <div class="portfolio__project" data-item="frontend">
+                        <img class="portfolio__img" src="images/coding.svg" alt="">
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                    <div class="portfolio__project" data-item="backend">
+                        <img class="portfolio__img" src="images/program.svg" alt="">
+                        <a href="" class="live__demo">live demo </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <sectoin class="contact" id="contact">
+            <div class="container">
+                <h2 class="contact__title">Contact Us</h2>
+                <div class="contact__sub">
+                    <p class="contact__subtitle"><span>Get In Touch</span></p>
+                </div>
+                <div class="row">
+                    <div class="contact__info">
+                        <h3 class="contact__info__subtitle">Get In Touch</h3>
+                        <p class="contact__data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
+                            architecto corporis quod illo cupiditate explicabo.
+                        </p>
+                        <div class="contact__lists">
+                            <i class="fa fa-map-marker fa-1x "></i>
+                            <ul class="contact__list">
+                                <li class="name"><strong>location</strong></li>
+                                <li class="name">hargaisa somaliland</li>
+                            </ul>
+                        </div>
+                        <div class="contact__lists">
+                            <i class="fa fa-phone fa-1x"></i>
+                            <ul class="contact__list">
+                                <li class="name"><strong>Telephone</strong></li>
+                                <li class="name"><a href="tel:+251634046037">+251634046037</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact__lists">
+                            <i class="fa fa-envelope fa-1x"></i>
+                            <ul class="contact__list">
+                                <li class="name"><strong>Email</strong></li>
+                                <li class="name"><a href="mailto:abdisamaale@gmail.com">abdisamaale@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact__form">
+                        <h3 class="contact__info__subtitle">Message Me</h3>
+                        <form action="" class="form_box">
+                            <div class="inputbox w50">
+                                <input type="text" class="input" name="name" required>
+                                <span>first name</span>
+                            </div>
+                            <div class="inputbox w50">
+                                <input type="text" class="input" name="name" required>
+                                <span>last name</span>
+                            </div>
+                            <div class="inputbox w100">
+                                <input type="text" class="input" name="email" required>
+                                <span>email address</span>
+                            </div>
+                            <div class="inputbox w100">
+                                <textarea name="" id="" required></textarea>
+                                <span>write your message here... </span>
+                            </div>
+                            <div class="inputbox w100">
+                                <input type="submit" name="" id="" value="submit" class="btn contact--btn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </sectoin>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__about">
+                    <h2 class="footer__title">About Us</h2>
+                    <p class="footer__data">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates.</p>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-facebook"></i> </a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i> </a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i> </a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i> </a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h2 class="footer__title">Quick links</h2>
+                    <ul class="footer__social__list">
+                        <li class="footer__social__item"><a href="">About</a></li>
+                        <li class="footer__social__item"><a href="">FAQ</a></li>
+                        <li class="footer__social__item"><a href="">Privacy Policy</a></li>
+                        <li class="footer__social__item"><a href="">Help</a></li>
+                        <li class="footer__social__item"><a href="">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <h2 class="footer__title">Menu</h2>
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu__item"><a href="" class="footer__links">Home</a></li>
+                        <li class="footer__menu__item"><a href="" class="footer__links">Service</a></li>
+                        <li class="footer__menu__item"><a href="" class="footer__links">About</a></li>
+                        <li class="footer__menu__item"><a href="" class="footer__links">Portfolio</a></li>
+                        <li class="footer__menu__item"><a href="" class="footer__links">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h2 class="footer__title">Subscribe</h2>
+                    <form action="" class="footer__form">
+                        <input type="email" placeholder="Email">
+                        <input type="submit" class="btn footer--btn" value="subscribe">
+                    </form>
+                </div>
+
+            </div>
+            <div class="copyright">created with by <a href="kaabe.org">kaabe</a> All right is reserved &copy; kaabe
+                web developers 
+            </div>
+
+        </div>
+
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="scrollup__icon"><i class="fa fa-arrow-alt-circle-up"></i></i>
+    </a>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

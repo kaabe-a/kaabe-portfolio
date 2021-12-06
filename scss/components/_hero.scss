@@ -1,0 +1,28 @@
+/*========== Hero ==========*/
+
+.hero{
+    margin-top: 10em;
+    &__title{
+        font-size: var(--h1-font-size);
+        line-height: var(--title-line-height);
+    }
+    &__data{
+        line-height: var(--text-line-height);
+        margin: var(--m_tb);
+        text-align: justify;
+    }
+    &__info{
+        width: 100%;
+    }
+    &__img{
+        width: 100%;
+        transform: translateY(0px);
+    }
+    &__img img{
+        width: 100%;
+        object-fit: cover;
+    }
+    &--btn{
+        width: 100%;
+    }
+}

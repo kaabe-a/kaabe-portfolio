@@ -1,0 +1,22 @@
+/*========== Reusable CSS classes ==========*/
+
+.container{
+    width: Min(80%, 1128px);
+    margin-inline: auto;
+    position: relative;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--gap);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+section{
+    margin: var(--section-margin) 0;
+}
