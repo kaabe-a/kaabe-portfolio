@@ -14,7 +14,7 @@
         text-align: center;
         // margin-bottom: 1.5em;
         text-transform: lowercase;
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
 
     &__subtitle span::before,
@@ -71,13 +71,13 @@
         outline: none;
         resize: none;
         padding: 8px 0;
-        border-bottom: 1px solid var(--text-color);
+        border-bottom: 1px solid var(--primary-color);
     }
     .inputbox span{
         position: absolute;
         left: 0;
         padding: 5px 0;
-        color: var(--text-color-light);
+        color: var(--primary-color);
         font-size: 2rem;
         font-weight: 500;
         pointer-events: none;
@@ -103,7 +103,6 @@
 
      .contact--btn {
          padding: .5em 1em;
-         background-color: var(--secondray-color);
          text-transform: uppercase;
      }
 

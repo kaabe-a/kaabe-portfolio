@@ -9,8 +9,8 @@
         border-radius: 10px;
         text-align: center;
         padding: 1.5em;
-        background-color: var(--text-color-light);
-        color: var(--white-color);
+        background-color: var(--secondray-color);
+        color: var(--primary-color);
     }
     &__img{
         width: 100%;
@@ -32,7 +32,7 @@
         text-align: center;
         margin-bottom: 1.5em;
         text-transform: lowercase;
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
 
     &__subtitle span::before,
@@ -100,10 +100,5 @@
         font-size: 1.7rem;
         margin: 1em 0;
         text-transform: uppercase;
-    }
-    .service--btn:hover,
-    .service--btn:focus{
-        background-color: var(--primary-color);
-        color: var(--text-color-light);
     }
 }

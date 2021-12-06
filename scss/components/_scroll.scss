@@ -10,12 +10,12 @@
     opacity: .8;
     transition: .4s;
     &:hover{
-        background-color: var(--text-color-light);
+        background-color: var(--secondray-color);
         opacity: 1;
     }
     &__icon{
         font-size: 2.5rem;
-        color: var(--text-color);
+        color: var(--primary-color);
     }
 
 }
@@ -29,11 +29,11 @@
     border-radius: .5rem;
     background-color: var(--secondray-color);
     &-thumb{
-        background-color: var(--white-color);
+        background-color: var(--primary-color);
         border-radius: .5rem;
 
         &:hover{
-            background-color: var(--text-color);
+            background-color: var(--primary-color);
         }
     }
 }

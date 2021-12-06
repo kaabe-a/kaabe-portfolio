@@ -9,7 +9,7 @@
         text-align: center;
         margin-bottom: 1.5em;
         text-transform: lowercase;
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
 
     &__subtitle span::before,
@@ -45,10 +45,11 @@
        justify-content: center;
        align-items: center;
        flex-wrap: wrap;
+       color: var(--secondray-color);
    }
    &__item{
        padding: .2em .6em;
-       background-color: var(--light-color);
+       background-color: var(--primary-color);
        margin: 0 .2em;
        cursor: pointer;
    }
@@ -60,10 +61,11 @@
    }
    &__project{
        border-radius: 20px;
-       background-color: var(--white-color);
+       background-color: var(--body-color);
        cursor: pointer;
        overflow: hidden;
        position: relative;
+       border: 1px dashed var(--primary-color);
        
    }
     &__project .portfolio__img{
@@ -81,11 +83,12 @@
         top: 40%;
         bottom: 40%;
         text-align: center;
-        color: var(--white-color);
-        padding: .2em 1em;
-        background-color: var(--body-color);
+        color: var(--secondray-color);
+        padding: .1em 1em;
+        background-color: var(--primary-color);
         left: 30%;
         z-index: 1;
+        font-size: 1.1rem;
         right: 30%;
         display: none;
     }
@@ -94,8 +97,8 @@
     }   
 }
 .active{
-    background-color: var(--body-color);
-    color: var(--title-color);
+    background-color: var(--primary-color);
+    color: var(--secondray-color);
 }
 .hide{
     display: none;
