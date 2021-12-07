@@ -14,7 +14,8 @@ section{
     display:flex;
     align-items: center;
     justify-content: center;
-}    
+    margin: 0;
+}   
 /*========== Header Section ==========*/
     header{
         text-align: start;
@@ -79,6 +80,7 @@ section{
    
 /*========== Hero Section ==========*/
     .hero{
+        margin-top: 0;
         .row{
             gap: 4em;
         }

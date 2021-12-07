@@ -10,7 +10,7 @@
   --h1-font-size: Clamp(3rem, 3.5vw, 4.5rem);
   --h2-font-size:2.5rem;
   --h3-font-size:2rem;
-  --normal-font-size:2rem;
+  --normal-font-size:1.8rem;
   --small-font-size:1rem;
   --title-line-height: 1;
   --text-line-height: 1.7;
@@ -55,7 +55,7 @@ h2, h3 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -99,8 +99,14 @@ img {
   gap: var(--gap);
 }
 
-section {
-  margin-bottom: var(--section-margin);
+.section {
+  margin-bottom: 4.5rem;
+}
+.section__title, .section__title-center {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
 }
 
 /*========== Buttons Css ==========*/
@@ -735,6 +741,7 @@ body.dark-theme {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
 
   /*========== Header Section ==========*/
@@ -793,6 +800,9 @@ body.dark-theme {
   }
 
   /*========== Hero Section ==========*/
+  .hero {
+    margin-top: 0;
+  }
   .hero .row {
     gap: 4em;
   }
