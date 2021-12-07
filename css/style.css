@@ -583,7 +583,7 @@ header .bars::after {
   margin-top: 3em;
   padding-top: 1em;
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: var(--secondray-color);
 }
 .footer a {
   color: var(--secondray-color);
@@ -706,21 +706,15 @@ header .bars::after {
 
 /*========== Theme ==========*/
 body.dark-theme {
-  --body-color: hsl(0, 0%, 5%);
-  --primary-color:hsl(0, 0%, 93%);
-  --title-color: hsl(0, 0%, 94%);
-  --text-color: hsl(0, 0%, 70%);
-  --text-color-light:hsl(0, 0%, 35%);
-  --secondray-color:hsl(180, 100%, 25%);
-  --white-color:hsl(0, 0%, 100%);
-  --color-light:hsl(0, 0%, 13%);
-  --shadow:hsla(0, 100%, 100%, .6);
+  --body-color: hsl(0, 0%, 13%);
+  --primary-color:hsl(0, 0%, 100%);
+  --secondray-color:hsl(0, 0%, 0%);
 }
 
 .change-theme {
   position: absolute;
   right: -4rem;
-  top: 0.5rem;
+  top: 0.2rem;
   color: var(--text-color);
   cursor: pointer;
   font-size: 3rem;
@@ -807,10 +801,10 @@ body.dark-theme {
     gap: 4em;
   }
   .hero .hero__info {
-    width: 60%;
+    width: 55%;
   }
   .hero .hero__img {
-    width: 40%;
+    width: 45%;
   }
   .hero .hero__img img {
     transform: translateY(0px);

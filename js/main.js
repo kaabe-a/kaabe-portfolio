@@ -106,3 +106,79 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+//Es6 Classes
+class TypeWriter {
+    constructor(textElement, words, wait) {
+        this.textElement = textElement;
+        this.words = words;
+        this.text = '';
+        this.wait = parseInt(wait, 10);
+        this.wordIndex = 0;
+        this.type();
+        this.isDeleting = false;
+    }
+
+    type() {
+        const current = this.wordIndex % this.words.length;
+        //Get full text of current word
+        const fulltext = this.words[current]
+        // check if deleting
+        if (this.isDeleting) {
+            //remove char
+            this.text = fulltext.substring(0, this.text.length - 1);
+        } else {
+            //add char
+            this.text = fulltext.substring(0, this.text.length + 1);
+        }
+        //insert txt into element
+        this.textElement.innerHTML = `<span class='text'> ${this.text}</span>`
+        //type speed
+        let typeSpeed = 300;
+        if (this.isDeleting) {
+            typeSpeed /= 3;
+        }
+        //if word is complete
+        if (!this.isDeleting && this.text === fulltext) {
+            //make pause at end
+            typeSpeed = this.wait /= 2;
+            //set delete to True
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.text === '') {
+            //set delete to false
+            this.isDeleting = false;
+            //move to next word
+            this.wordIndex++;
+            //pause befor start typing
+            typeSpeed = 300;
+        }
+        setTimeout(() => this.type(), typeSpeed)
+
+    }
+
+}
+//Init On Dom Load
+document.addEventListener('DOMContentLoaded', init);
+
+//init app
+function init() {
+    const textElement = document.querySelector('.txt-type');
+    const words = JSON.parse(textElement.getAttribute('data-words'));
+    const wait = textElement.getAttribute('data-wait');
+    //init TypeWriter
+    new TypeWriter(textElement, words, wait)
+}
+
+//Init On Dom Load
+document.addEventListener('DOMContentLoaded', ini);
+
+//init app
+function ini() {
+    const textElement = document.querySelector('.txt-typ');
+    const words = JSON.parse(textElement.getAttribute('data-word'));
+    const wait = textElement.getAttribute('data-wait');
+    //init TypeWriter
+    new TypeWriter(textElement, words, wait)
+}
