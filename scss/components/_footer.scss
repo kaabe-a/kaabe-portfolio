@@ -3,10 +3,10 @@
 .footer{
     margin-top: 3em;
     padding-top: 1em;
-    background-color: var(--primary-color);
-    color: var(--secondray-color);
+    background-color: var(--secondary-color);
+
     a{
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
     a:hover{
         opacity: .8;
@@ -18,31 +18,31 @@
     h2::before{
         position: absolute;
         content: "";
-        background-color: var(--secondray-color);
+        background-color: var(--primary-color);
         width: 50px;
         height: 3px;
         bottom: -10px;
     }
     &__title{
         font-size: 2rem;
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
     &__data{
         text-align: justify;
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
 
     .social{
         margin-top: 20px;
         display: flex;
         gap: 20px;
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
     .footer__social__item a{
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
     .footer__social__item a:hover{
-        color: var(--secondray-color);
+        color: var(--primary-color);
     }
     .social a{
         display: inline-block;
@@ -83,9 +83,9 @@
     }
     .copyright{
         a{
-            color: var(--secondray-color);
+            color: var(--primary-color);
         }
-        color: var(--secondray-color);
+        color: var(--primary-color);
         margin-top: 2em;
         padding-bottom: 1em;
         text-align: center;

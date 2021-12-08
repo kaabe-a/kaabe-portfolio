@@ -593,11 +593,10 @@ header .bars::after {
 .footer {
   margin-top: 3em;
   padding-top: 1em;
-  background-color: var(--primary-color);
-  color: var(--secondray-color);
+  background-color: var(--secondary-color);
 }
 .footer a {
-  color: var(--secondray-color);
+  color: var(--primary-color);
 }
 .footer a:hover {
   opacity: 0.8;
@@ -609,30 +608,30 @@ header .bars::after {
 .footer h2::before {
   position: absolute;
   content: "";
-  background-color: var(--secondray-color);
+  background-color: var(--primary-color);
   width: 50px;
   height: 3px;
   bottom: -10px;
 }
 .footer__title {
   font-size: 2rem;
-  color: var(--secondray-color);
+  color: var(--primary-color);
 }
 .footer__data {
   text-align: justify;
-  color: var(--secondray-color);
+  color: var(--primary-color);
 }
 .footer .social {
   margin-top: 20px;
   display: flex;
   gap: 20px;
-  color: var(--secondray-color);
+  color: var(--primary-color);
 }
 .footer .footer__social__item a {
-  color: var(--secondray-color);
+  color: var(--primary-color);
 }
 .footer .footer__social__item a:hover {
-  color: var(--secondray-color);
+  color: var(--primary-color);
 }
 .footer .social a {
   display: inline-block;
@@ -668,13 +667,13 @@ header .bars::after {
   gap: 30px;
 }
 .footer .copyright {
-  color: var(--secondray-color);
+  color: var(--primary-color);
   margin-top: 2em;
   padding-bottom: 1em;
   text-align: center;
 }
 .footer .copyright a {
-  color: var(--secondray-color);
+  color: var(--primary-color);
 }
 
 .scrollup {
@@ -723,10 +722,9 @@ body.dark-theme {
 }
 
 .change-theme {
-  position: absolute;
   right: -4rem;
   top: 0.2rem;
-  color: var(--text-color);
+  color: var(--secondray-color);
   cursor: pointer;
   font-size: 3rem;
 }
@@ -736,8 +734,8 @@ body.dark-theme {
   width: 45px;
   display: inline-block;
   position: absolute;
-  top: 22%;
-  left: 10%;
+  top: 13%;
+  left: 4%;
   background-color: whitesmoke;
 }
 
@@ -839,7 +837,7 @@ body.dark-theme {
     object-fit: cover;
   }
   .hero--btn {
-    width: 40%;
+    width: 60%;
   }
   .hero__data {
     margin: 1.5em 0;
@@ -862,7 +860,7 @@ body.dark-theme {
     right: 25%;
   }
   .about--btn {
-    width: 50%;
+    width: 100%;
   }
 
   /*========== Service Section ==========*/
@@ -892,6 +890,16 @@ body.dark-theme {
     width: min(80%, 1128px);
     margin-inline: auto;
     position: relative;
+  }
+
+  .social__links {
+    top: 22%;
+    left: 10%;
+  }
+
+  .change-theme {
+    position: absolute;
+    color: var(--primary-color);
   }
 }
 

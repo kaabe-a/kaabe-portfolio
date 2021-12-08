@@ -96,7 +96,7 @@
             object-fit: cover;
         }
         &--btn{
-            width: 40%;
+            width: 60%;
         }
         &__data{
             margin: 1.5em 0;
@@ -129,7 +129,7 @@
         }
 
         &--btn {
-            width: 50%;
+            width: 100%;
         }
     }
 /*========== Service Section ==========*/
@@ -168,5 +168,14 @@
             margin-inline: auto;
             position: relative;
         }
+    }
+
+    .social__links{
+        top: 22%;
+        left: 10%;
+    }
+    .change-theme{
+        position: absolute;
+        color: var(--primary-color);
     }
 }

@@ -18,10 +18,10 @@ body.dark-theme{
 }
 
 .change-theme{
-    position: absolute;
+    // position: absolute;
     right: -4rem;
     top: .2rem;
-    color: var(--text-color);
+    color: var(--secondray-color);
     cursor: pointer;
     font-size: 3rem;
 }
