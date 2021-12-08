@@ -1,27 +1,33 @@
 /*==========|  Css Social |===========*/
-.social_icons{
-    position: fixed;
-    top: 20%;
-    left: 10px;
-    .social__link{
-        padding: 1rem;
-        margin: 1rem 0;
-        cursor: pointer;
-        background-color: darkcyan;
-        .bx{
-            color: white;
-            font-size: 20px;
-        }
-        .bx:hover,
-        .bx:focus{
-            padding-right: 1rem;
-            right: 40px;
-        }
-
-    }
-    // .social__link:hover{
-    //     padding-right: 1rem;
-    // }
-    
-
+.social__links {
+    width: 45px;
+    display: inline-block;
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    background-color: whitesmoke;
 }
+
+.social__link {
+    position: relative;
+    padding: .4rem;
+    margin: 1rem 0;
+    // background-color: thistle;
+    cursor: pointer;
+
+    .bx {
+        color: rgb(27, 27, 27);
+        // font-size: 20px;
+    } 
+}
+.social__link :hover{
+    position: relative;
+    padding: 0 10px;
+}
+
+
+// .bx:hover,
+// .bx:focus {
+//     color: red;
+//     padding-left: 1rem;
+// }

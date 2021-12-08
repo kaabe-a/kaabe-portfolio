@@ -11,6 +11,10 @@
         padding: 1.5em;
         background-color: var(--secondray-color);
         color: var(--primary-color);
+        cursor: pointer;
+    }
+    &__card__subtitle{
+        font-size: 2rem;
     }
     &__img{
         width: 100%;
@@ -89,7 +93,7 @@
     
     &__card:focus,
     &__card:hover{
-        box-shadow: 0 0 10px var(--shadow);
+        box-shadow: 0 0 10px rgba(0,0,0, .8);
     }
     .serivece__data{
         margin-bottom: 1em;

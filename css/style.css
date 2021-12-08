@@ -7,7 +7,7 @@
   --font-weight-semi-bold:600;
   --font-weight-bold:900;
   --bigest-font-size:4rem;
-  --h1-font-size: Clamp(3rem, 3.5vw, 4.5rem);
+  --h1-font-size: Clamp(3rem, 3.5vw, 4rem);
   --h2-font-size:2.5rem;
   --h3-font-size:2rem;
   --normal-font-size:1.8rem;
@@ -209,7 +209,7 @@ header .bars::after {
 
 /*========== Hero ==========*/
 .hero {
-  padding: 8rem 0 2rem;
+  padding: 8rem 0;
 }
 .hero__title {
   font-size: var(--h1-font-size);
@@ -306,6 +306,10 @@ header .bars::after {
   padding: 1.5em;
   background-color: var(--secondray-color);
   color: var(--primary-color);
+  cursor: pointer;
+}
+.service__card__subtitle {
+  font-size: 2rem;
 }
 .service__img {
   width: 100%;
@@ -377,7 +381,7 @@ header .bars::after {
   }
 }
 .service__card:focus, .service__card:hover {
-  box-shadow: 0 0 10px var(--shadow);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .service .serivece__data {
   margin-bottom: 1em;
@@ -728,26 +732,28 @@ body.dark-theme {
 }
 
 /*==========|  Css Social |===========*/
-.social_icons {
-  position: fixed;
-  top: 20%;
-  left: 15px;
+.social__links {
+  width: 45px;
+  display: inline-block;
+  position: absolute;
+  top: 22%;
+  left: 10%;
+  background-color: whitesmoke;
 }
-.social_icons .social__link {
-  padding: 1rem;
+
+.social__link {
+  position: relative;
+  padding: 0.4rem;
   margin: 1rem 0;
-  background-color: thistle;
   cursor: pointer;
 }
-.social_icons .social__link .bx {
-  color: rgb(27, 27, 27);
-  font-size: 20px;
+.social__link .bx {
+  color: #1b1b1b;
 }
-.social_icons .social__link .bx:hover,
-.social_icons .social__link .bx:focus {
-  /* padding-right: 1rem; */
-  color: teal;
-  padding-left: 1rem;
+
+.social__link :hover {
+  position: relative;
+  padding: 0 10px;
 }
 
 /*========== Mediaqueries ==========*/
@@ -815,6 +821,9 @@ body.dark-theme {
   }
 
   /*========== Hero Section ==========*/
+  .hero {
+    margin-top: 6rem;
+  }
   .hero .row {
     gap: 4em;
   }
