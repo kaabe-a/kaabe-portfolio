@@ -1,0 +1,27 @@
+/*==========|  Css Social |===========*/
+.social_icons{
+    position: fixed;
+    top: 20%;
+    left: 10px;
+    .social__link{
+        padding: 1rem;
+        margin: 1rem 0;
+        cursor: pointer;
+        background-color: darkcyan;
+        .bx{
+            color: white;
+            font-size: 20px;
+        }
+        .bx:hover,
+        .bx:focus{
+            padding-right: 1rem;
+            right: 40px;
+        }
+
+    }
+    // .social__link:hover{
+    //     padding-right: 1rem;
+    // }
+    
+
+}

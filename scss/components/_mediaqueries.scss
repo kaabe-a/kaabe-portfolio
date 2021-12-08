@@ -8,14 +8,14 @@
         justify-content: space-between;
     }
 
-section{
-    width: 100vw;
-    height: 100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}   
+// section{
+//     width: 100vw;
+//     height: 100vh;
+//     display:flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 0;
+// }   
 /*========== Header Section ==========*/
     header{
         text-align: start;
@@ -80,7 +80,7 @@ section{
    
 /*========== Hero Section ==========*/
     .hero{
-        margin-top: 0;
+        // margin-top: 1;
         .row{
             gap: 4em;
         }
@@ -164,7 +164,7 @@ section{
         }
 
         .container {
-            width: Min(90%, 1128px);
+            width: Min(80%, 1128px);
             margin-inline: auto;
             position: relative;
         }

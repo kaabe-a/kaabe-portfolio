@@ -44,6 +44,10 @@ body {
   font-family: var(--font-family-verdana);
 }
 
+.txt-type, .txt-typ {
+  border-right: 1px solid #777;
+}
+
 h1, h2, h3 {
   color: var(--primary-color);
   font-weight: 600;
@@ -81,14 +85,14 @@ img {
 
 /*========== Reusable CSS classes ==========*/
 .container {
-  width: min(80%, 1128px);
+  width: min(65%, 1128px);
   margin-inline: auto;
   position: relative;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--gap);
 }
 
@@ -100,7 +104,8 @@ img {
 }
 
 .section {
-  margin-bottom: 4.5rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 .section__title, .section__title-center {
   text-align: center;
@@ -176,7 +181,7 @@ header .bars {
   display: inline-block;
   background-color: var(--primary-color);
   width: 40px;
-  height: 4px;
+  height: 3px;
   position: relative;
 }
 header .bars::before,
@@ -185,7 +190,7 @@ header .bars::after {
   content: "";
   position: absolute;
   width: 20px;
-  height: 4px;
+  height: 3px;
 }
 header .bars::before {
   width: 25px;
@@ -204,7 +209,7 @@ header .bars::after {
 
 /*========== Hero ==========*/
 .hero {
-  margin-top: 13rem;
+  padding: 8rem 0 2rem;
 }
 .hero__title {
   font-size: var(--h1-font-size);
@@ -273,6 +278,7 @@ header .bars::after {
 .about .about__sub {
   position: relative;
   width: 400px;
+  text-align: center;
   margin-inline: auto;
 }
 .about .about__subtitle span::before {
@@ -425,6 +431,7 @@ header .bars::after {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 1rem;
   color: var(--secondray-color);
 }
 .portfolio__item {
@@ -720,6 +727,29 @@ body.dark-theme {
   font-size: 3rem;
 }
 
+/*==========|  Css Social |===========*/
+.social_icons {
+  position: fixed;
+  top: 20%;
+  left: 15px;
+}
+.social_icons .social__link {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: thistle;
+  cursor: pointer;
+}
+.social_icons .social__link .bx {
+  color: rgb(27, 27, 27);
+  font-size: 20px;
+}
+.social_icons .social__link .bx:hover,
+.social_icons .social__link .bx:focus {
+  /* padding-right: 1rem; */
+  color: teal;
+  padding-left: 1rem;
+}
+
 /*========== Mediaqueries ==========*/
 @media all and (min-width: 800px) {
   /*========== Reusable Classes ==========*/
@@ -727,15 +757,6 @@ body.dark-theme {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-  }
-
-  section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
   }
 
   /*========== Header Section ==========*/
@@ -794,9 +815,6 @@ body.dark-theme {
   }
 
   /*========== Hero Section ==========*/
-  .hero {
-    margin-top: 0;
-  }
   .hero .row {
     gap: 4em;
   }
@@ -862,7 +880,7 @@ body.dark-theme {
     width: 35%;
   }
   .footer .container {
-    width: min(90%, 1128px);
+    width: min(80%, 1128px);
     margin-inline: auto;
     position: relative;
   }

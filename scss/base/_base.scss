@@ -18,6 +18,9 @@ body{
   color: var(--primary-color);
   font-family: var(--font-family-verdana);
 }
+.txt-type, .txt-typ{
+    border-right: 1px solid #777;
+}
 h1,h2,h3{
     color: var(--primary-color);
     font-weight: 600;
