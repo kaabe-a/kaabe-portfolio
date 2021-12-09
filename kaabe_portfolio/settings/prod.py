@@ -2,7 +2,7 @@ from .base import *
 
 
 
-ALLOWED_HOSTS = ['*','kaabe.org']
+ALLOWED_HOSTS = ['*','kaabeporfolio.herokuapp.com']
 
 DEBUG  = True
 TEMPLATE_DEBUG = DEBUG
