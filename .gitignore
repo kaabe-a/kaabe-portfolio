@@ -13,7 +13,7 @@ static
 # Compiled Python files
 *.pyc
 **/__pycache__
-.gitignore
+
 # Folders
 .idea
 .vscode
@@ -128,8 +128,9 @@ celerybeat.pid
 dev.py
 
 # Environments
-.venv
+.env/
 .env
+.venv
 env/
 venv/
 ENV/
@@ -153,3 +154,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.gitignore
