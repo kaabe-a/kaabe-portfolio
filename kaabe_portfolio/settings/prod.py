@@ -4,7 +4,7 @@ from .base import *
 
 ALLOWED_HOSTS = ['*','kaabeporfolio.herokuapp.com']
 
-DEBUG  = True
+DEBUG  = False
 TEMPLATE_DEBUG = DEBUG
 
 INSTALLED_APPS +=[
