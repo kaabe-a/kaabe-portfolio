@@ -1,1 +1,1 @@
-web: gunicorn kaabeporfolio.wsgi
+web: gunicorn kaabe_portfolio.wsgi
