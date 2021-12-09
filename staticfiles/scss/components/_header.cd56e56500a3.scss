@@ -1,0 +1,76 @@
+/*========== Header Css ==========*/
+header{
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--body-color);
+    z-index: 1000;
+    .logo__text{
+        color: var(--primary-color);
+    }
+    .nav{
+        width: 100%;
+        position: absolute;
+        background-color: var(--primary-color);
+        &__link{
+            color: var(--body-color);
+            font-variant: small-caps;
+        }
+        &__item{
+            padding: var(--pd);
+        }
+        border-radius: 10px;
+
+        &__list--primary{
+            margin-bottom: var(--mr__bottom);
+        }
+        
+    }
+    .nav{
+        position: relative;
+        height: 0;
+        visibility: hidden;
+    }
+    .nav-visible{
+        position: relative;
+        height: auto;
+        visibility: visible;
+    }
+    .nav-toggle{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+    .bars {
+        display: inline-block;
+        background-color: var(--primary-color);
+        width: 40px;
+        height: 3px;
+        position: relative;
+    }
+
+    .bars::before,
+    .bars::after {
+        background: var(--primary-color);
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 3px;
+    }
+    .bars::before{
+        width: 25px;
+        top: -10px;
+        left: 0px;
+    }
+    .bars::after{
+        width: 10px;
+        top: 10px;
+        left: 0;
+    }
+}
+.scroll-header {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+}

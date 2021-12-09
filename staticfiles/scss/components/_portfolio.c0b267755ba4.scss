@@ -1,0 +1,106 @@
+/*==========| Css Header |===========*/
+.portfolio{
+    align-self: flex-start;
+    &__title{
+        text-align: center;
+    }
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        margin-bottom: 1.5em;
+        text-transform: lowercase;
+        color: var(--primary-color);
+    }
+
+    &__subtitle span::before,
+    &__subtitle span::after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: var(--primary-color);
+    }
+
+    &__sub {
+        position: relative;
+        // background-color: gainsboro;
+        width: 400px;
+        margin-inline: auto;
+    }
+
+    &__subtitle span::before {
+        position: absolute;
+        top: 55%;
+        left: 22%;
+    }
+
+    &__subtitle span::after {
+        position: absolute;
+        top: 55%;
+        right: 22%;
+    }
+
+   &__list{
+       display: flex;
+       margin-bottom: 1.5em;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 1rem;
+       color: var(--secondray-color);
+   }
+   &__item{
+       padding: .2em .6em;
+       background-color: var(--primary-color);
+       margin: 0 .2em;
+       cursor: pointer;
+   }
+   &__projects{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+       gap: 20px;
+       margin: 2.5em 0;
+   }
+   &__project{
+       border-radius: 20px;
+       background-color: var(--body-color);
+       cursor: pointer;
+       overflow: hidden;
+       position: relative;
+       border: 1px dashed var(--primary-color);
+       
+   }
+    &__project .portfolio__img{
+        width: 100%;
+        transition: .4s;
+    }
+    &__project .portfolio__img:hover{
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1.5);
+        // background-color: red;
+    }
+    .live__demo{
+        position: absolute;
+        top: 40%;
+        bottom: 40%;
+        text-align: center;
+        color: var(--secondray-color);
+        padding: .1em 1em;
+        background-color: var(--primary-color);
+        left: 30%;
+        z-index: 1;
+        font-size: 1.1rem;
+        right: 30%;
+        display: none;
+    }
+    &__project:hover .live__demo{
+        display: block;
+    }   
+}
+.active{
+    background-color: var(--primary-color);
+    color: var(--secondray-color);
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,16 @@
+/*========== Buttons Css ==========*/
+.btn{
+    padding: .3em 1em;
+    background-color:var(--primary-color);
+    letter-spacing: 3px;
+    color: var(--secondray-color);
+    font-variant: small-caps;
+    border-radius: 2px;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+}
+.btn:hover,
+.btn:focus{
+    opacity: .8;
+}
