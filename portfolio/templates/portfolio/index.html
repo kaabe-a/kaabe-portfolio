@@ -1,0 +1,300 @@
+{%extends 'base/base.html'%}
+{%load static%}
+{%block content%}
+<div class="social_icons">
+    <ul class="social__links">
+        <li class="social__link"><i class='bx bxl-meta bx-lg'></i></li>
+        <li class="social__link"><i class='bx bxl-twitter bx-lg'></i></li>
+        <li class="social__link"><i class='bx bxl-youtube bx-lg'></i></li>
+        <li class="social__link"><i class='bx bxl-linkedin bx-lg'></i></li>
+    </ul>
+</div>
+<!-- header section -->
+<section class="hero section" id="home">
+    <div class="container row">
+        <div class="hero__info">
+            <h1 class="hero__title"><span style="font-weight: 100;">Hello,</span> <br>
+                I'am kaabe <span class="txt-type" data-wait='1000'
+                    data-words='["Full stack developer","freelancer","web designer"]'>
+                </span>
+            </h1>
+            <p class="hero__data">I create beautiful and responsive world class websites, with accessiblity in
+                mind!, if you need website let me do it for you.</p>
+            <button class="hero--btn btn">hire me!</button>
+        </div>
+        <div class="hero__img">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <img src="{%static 'images/kaabe.svg'%}" alt="image ">
+        </div>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <div class="container">
+        <h2 class="section__title">About Us</h2>
+        <div class="about__sub">
+            <p class="about__subtitle"><span>Who Am I</span></p>
+        </div>
+        <div class="row">
+            <div class="about__img">
+                <span class="span1"></span>
+                <span class="span2"></span>
+                <img src="{% static 'images/kaabe.svg' %}" alt="image ">
+            </div>
+            <div class="about__info">
+                <h3 class="about__info__subtitle">I'am kaabe <span class="txt-typ" data-wait='1000'
+                        data-word='["fullstack developer","freelancer","web designer"]'>
+                    </span></h3>
+                <p class="about__data">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam
+                    fugiat ex sapiente. Amet, repellat odit natus enim, reprehenderit necessitatibus quod cum
+                    aliquid minima perferendis repudiandae in eligendi dicta explicabo!</p>
+                <button class="btn about--btn">donload cv</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service section" id="service">
+    <div class="container">
+        <h2 class="section__title">My Services</h2>
+        <div class="service__sub">
+            <p class="service__subtitle"><span>what i provide</span></p>
+        </div>
+        <div class="grid">
+            <div class="service__card">
+                <div class="bar"></div>
+                <div class="service__img"><i class="fa fa-code fa-2x"></i></div>
+                <h3 class="service__card__subtitle">web development</h3>
+                <p class="serivece__data">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button class="btn service--btn">learn more</button>
+            </div>
+            <div class="service__card">
+                <div class="bar"></div>
+                <div class="service__img"><i class="fa fa-lightbulb fa-2x"></i></div>
+                <h3 class="service__card__subtitle">web design</h3>
+                <p class="serivece__data">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button class="btn service--btn">learn more</button>
+            </div>
+            <div class="service__card">
+                <div class="bar"></div>
+                <div class="service__img"><i class="fab fa-wordpress fa-2x"></i></div>
+                <h3 class="service__card__subtitle">wordpress dev</h3>
+                <p class="serivece__data">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button class="btn service--btn">learn more</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio section" id="portfolio">
+    <div class="container">
+        <h2 class="section__title">Projects I completed</h2>
+        <div class="portfolio__sub">
+            <p class="portfolio__subtitle"><span>my projects</span></p>
+        </div>
+        <ul class="portfolio__list">
+            <li class="portfolio__item active" data-filter="all">All</li>
+            <li class="portfolio__item" data-filter="fullstack">Fullstack</li>
+            <li class="portfolio__item" data-filter="frontend">Frontend</li>
+            <li class="portfolio__item" data-filter="backend">Backend</li>
+        </ul>
+        <div class="portfolio__projects">
+
+            <div class="portfolio__project" data-item="frontend">
+                <img class="portfolio__img" src="{%static 'images/coding.svg'%}" alt="image " />
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+            <div class="portfolio__project" data-item="frontend">
+                <img class="portfolio__img" src="{%static 'images/program.svg'%}" alt="image " />
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+            <div class="portfolio__project" data-item="fullstack">
+                <img class="portfolio__img" src="{%static 'images/coding.svg'%}" alt="image ">
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+            <div class="portfolio__project" data-item="fullstack">
+                <img class="portfolio__img" src="{%static 'images/remote.svg'%}" alt="image ">
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+            <div class="portfolio__project" data-item="backend">
+                <img class="portfolio__img" src="{%static 'images/coding.svg'%}" alt="image ">
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+            <div class="portfolio__project" data-item="backend">
+                <img class="portfolio__img" src="{%static 'images/program.svg'%}" alt="image ">
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+            <div class="portfolio__project" data-item="frontend">
+                <img class="portfolio__img" src="{%static 'images/remote.svg'%}" alt="image ">
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+            <div class="portfolio__project" data-item="frontend">
+                <img class="portfolio__img" src="{%static 'images/coding.svg'%}" alt="image ">
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+            <div class="portfolio__project" data-item="backend">
+                <img class="portfolio__img" src="{%static 'images/program.svg'%}" alt="image ">
+                <a href="" class="live__demo">live demo </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section blog" id="blog">
+    <div class="container">
+        <h2 class="blog__title">latest articles</h2>
+        <div class="blog__sub">
+            <p class="blog__subtitle"><span>top articles</span></p>
+        </div>
+        <div class="grid">
+            <div class="blog__card">
+                <div class="blog__img">
+                    <img src="{%static 'images/remote.svg'%}" alt="post images">
+                    <div class="date">
+                        <span>11-Appril</span><br>
+                        <span>2021</span>
+                    </div>
+                </div>
+                <div class="blog__social">
+                    <ul class="blog__social__lists">
+                        <li class="blog__social__list">
+                            <i class="bx bxl-linkedin bx-lg" style="color: rgb(64, 64, 102);"></i>
+                            <i class="bx bxl-meta bx-lg" style="color: blue;"></i>
+                            <i class="bx bxl-twitter bx-lg" style="color: rgb(6, 82, 85);"></i>
+                            <i class="bx bxl-youtube bx-lg" style="color: rgb(128, 55, 55);"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__description">
+                    <h2 class="blog__post__title">Lorem ipsum dolor sit amet.</h2>
+                    <p class="blog__post__data">Lorem ipsum dolor sit amet consectetur.</p>
+                    <button class="btn blog--btn">read more</button>
+                </div>
+            </div>
+            <div class="blog__card">
+                <div class="blog__img">
+                    <img src="{%static 'images/remote.svg'%}" alt="post images">
+                    <div class="date">
+                        <span>11-Appril</span><br>
+                        <span>2021</span>
+                    </div>
+                </div>
+                <div class="blog__social">
+                    <ul class="blog__social__lists">
+                        <li class="blog__social__list">
+                            <i class="bx bxl-linkedin bx-lg" style="color: rgb(64, 64, 102);"></i>
+                            <i class="bx bxl-meta bx-lg" style="color: blue;"></i>
+                            <i class="bx bxl-twitter bx-lg" style="color: rgb(6, 82, 85);"></i>
+                            <i class="bx bxl-youtube bx-lg" style="color: rgb(128, 55, 55);"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__description">
+                    <h2 class="blog__post__title">Lorem ipsum dolor sit amet.</h2>
+                    <p class="blog__post__data">Lorem ipsum dolor sit amet consectetur.</p>
+                    <button class="btn blog--btn">read more</button>
+                </div>
+            </div>
+            <div class="blog__card">
+                <div class="blog__img">
+                    <img src="{%static 'images/remote.svg'%}" alt="post images">
+                    <div class="date">
+                        <span>11-Appril</span><br>
+                        <span>2021</span>
+                    </div>
+                </div>
+                <div class="blog__social">
+                    <ul class="blog__social__lists">
+                        <li class="blog__social__list">
+                            <i class="bx bxl-linkedin bx-lg" style="color: rgb(64, 64, 102);"></i>
+                            <i class="bx bxl-meta bx-lg" style="color: blue;"></i>
+                            <i class="bx bxl-twitter bx-lg" style="color: rgb(6, 82, 85);"></i>
+                            <i class="bx bxl-youtube bx-lg" style="color: rgb(128, 55, 55);"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__description">
+                    <h2 class="blog__post__title">Lorem ipsum dolor sit amet.</h2>
+                    <p class="blog__post__data">Lorem ipsum dolor sit amet consectetur.</p>
+                    <button class="btn blog--btn">read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <div class="container">
+        <h2 class="section__title-center">Contact Us</h2>
+        <div class="contact__sub">
+            <p class="contact__subtitle"><span>Get In Touch</span></p>
+        </div>
+        <div class="row">
+            <div class="contact__info">
+                <h3 class="contact__info__subtitle">Get In Touch</h3>
+                <p class="contact__data">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    architecto corporis quod illo.
+                </p>
+                <div class="contact__lists">
+                    <i class="fa fa-map-marker fa-1x "></i>
+                    <ul class="contact__list">
+                        <li class="name"><strong>location</strong></li>
+                        <li class="name">hargaisa somaliland</li>
+                    </ul>
+                </div>
+                <div class="contact__lists">
+                    <i class="fa fa-phone fa-1x"></i>
+                    <ul class="contact__list">
+                        <li class="name"><strong>Telephone</strong></li>
+                        <li class="name"><a href="tel:+251634046037">+251634046037</a></li>
+                    </ul>
+                </div>
+                <div class="contact__lists">
+                    <i class="fa fa-envelope fa-1x"></i>
+                    <ul class="contact__list">
+                        <li class="name"><strong>Email</strong></li>
+                        <li class="name"><a href="mailto:abdisamaale@gmail.com">abdisamaale@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact__form">
+                <h3 class="contact__info__subtitle">Message Me</h3>
+                <form class="form_box">
+                    <div class="inputbox w50">
+                        <input type="text" class="input" name="name" required>
+                        <span>first name</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input type="text" class="input" name="name" required>
+                        <span>last name</span>
+                    </div>
+                    <div class="inputbox w100">
+                        <input type="text" class="input" name="email" required>
+                        <span>email address</span>
+                    </div>
+                    <div class="inputbox w100">
+                        <textarea name="message" required></textarea>
+                        <span>write your message here... </span>
+                    </div>
+                    <div class="inputbox w100">
+                        <input type="submit" value="submit" class="btn contact--btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="scrollup__icon"><i class="fa fa-arrow-alt-circle-up"></i></i>
+</a>
+{%endblock%}

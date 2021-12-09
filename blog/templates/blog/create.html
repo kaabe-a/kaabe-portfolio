@@ -1,0 +1,70 @@
+{%extends 'base/base.html'%}
+{%block content%}
+{%load static%}
+    <style>
+        input[type='email'],
+        input[type='text'],
+        textarea,
+        input[type="file"]{
+            width: 100%;
+            padding: .8rem 0;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            /* margin: .5rem 0; */
+        }
+        select{
+            padding: .6rem 0;
+            width: 100%;
+            outline: none;
+            border: none;
+        }
+        textarea{
+            resize: none;
+        }
+        .form{
+            padding-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .w50{
+            width: 100%;
+        }
+        .w100{
+            width: 100%;
+        }
+        @media all and (min-width:800px) {
+            .w50{
+                width: 47%;
+            }
+        }
+    </style>
+   <div class="container  section">
+    <form action="" class="form" method="post" enctype="multipart/form-data">
+        {%csrf_token%}
+        <div class="w50 form-group">
+            {{form.label}}
+             {{form.title}}
+        </div>
+        <div class="w50 form-group">
+            {{form.slug}}
+        </div>
+        <div class="w50 form-group">
+            {{form.image}}
+       </div>
+       <div class="w50 form-group">
+        {{form.status}}
+       </div>
+       <div class="w50 form-group">
+           {{form.author}}
+       </div>
+       <div class="w100 form-group">
+           {{form.body}}
+       </div>
+       <input type="submit" class="btn" value="add post">
+    </form>
+   </div>
+
+{%endblock%}

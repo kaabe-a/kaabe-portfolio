@@ -1,0 +1,11 @@
+{%extends 'base/base.html'%}
+{%block content%}
+{%load static%}
+<div class="container section">
+    <form action="" method="post">
+        {%csrf_token%}
+        Are You Sure Want Delete This Post {{post.title}} ?
+        <input type="submit" class="btn">
+    </form>
+</div>
+{%endblock%}

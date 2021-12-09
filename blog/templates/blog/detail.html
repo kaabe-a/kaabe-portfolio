@@ -1,0 +1,33 @@
+{%extends 'base/base.html'%}
+{%block content%}
+{%load static%}
+<section class="section blog" id="blog">
+    <div class="container">
+        <div class="grid">
+            <div class="blog__card">
+                <div class="blog__img" style="text-align: center;">
+                    <img src="{{post.image.url}}" style="max-width: 60%; height: 250px;object-fit: cover;" alt="post images">
+                    <div class="date">
+                        <span>by {{post.author}} in</span><br>
+                        <span>{{post.created|date}}</span>
+                    </div>
+                </div>
+                <div class="blog__social">
+                    <ul class="blog__social__lists">
+                        <li class="blog__social__list">
+                            <i class="bx bxl-linkedin bx-lg" style="color: rgb(64, 64, 102);"></i>
+                            <i class="bx bxl-meta bx-lg" style="color: blue;"></i>
+                            <i class="bx bxl-twitter bx-lg" style="color: rgb(6, 82, 85);"></i>
+                            <i class="bx bxl-youtube bx-lg" style="color: rgb(128, 55, 55);"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__description">
+                    <h2 class="blog__post__title">{{post.title}}</h2>
+                    <p class="blog__post__data">{{post.body}}</p>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}
