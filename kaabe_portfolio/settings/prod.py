@@ -2,9 +2,9 @@ from .base import *
 
 
 
-ALLOWED_HOSTS = ['*','kaabeporfolio.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','kaabeporfolio.herokuapp.com']
 
-DEBUG  = False
+DEBUG  = True
 TEMPLATE_DEBUG = DEBUG
 
 INSTALLED_APPS +=[
