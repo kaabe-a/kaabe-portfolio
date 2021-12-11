@@ -5,7 +5,7 @@ from .base import *
 ALLOWED_HOSTS = ['127.0.0.1','kaabeporfolio.herokuapp.com']
 
 DEBUG  = False
-# TEMPLATE_DEBUG = DEBUG
+TEMPLATE_DEBUG = True
 
 INSTALLED_APPS +=[
 	# 'cloudinary_storage',

@@ -3,7 +3,6 @@
 {%load static%}
 <section class="section blog" id="blog">
     <div class="container">
-        <div class="grid">
             <div class="blog__card">
                 <div class="blog__img" style="text-align: center;">
                     <img src="{{post.image.url}}" style="max-width: 60%; height: 250px;object-fit: cover;" alt="post images">
@@ -27,7 +26,6 @@
                     <p class="blog__post__data">{{post.body}}</p>
                 </div>    
             </div>
-        </div>
     </div>
 </section>
 {%endblock%}
